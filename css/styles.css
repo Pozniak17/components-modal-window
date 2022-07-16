@@ -1,0 +1,32 @@
+/* Бекдроп */
+.backdrop {
+  /* бекдроп в нас фіксований */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* прозорий фон для бекдропу */
+  background-color: rgba(7, 50, 126, 0.7);
+}
+
+/* Модалка */
+.modal {
+  height: 400px;
+  height: 600px;
+  background-color: #ffffff;
+
+  /* позиціонуємо по центру модалку */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Ховаємо бекдроп з можливістю клацати в елементи */
+.backdrop--hidden {
+  /* прозорість */
+  opacity: 0;
+  /* можливість клікати через бекдроп по елементам */
+  pointer-events: none;
+}
